@@ -1,4 +1,13 @@
-## Set Up the database named movieapp
+
+<h3>Features:</h3>
+<p>1. User and Admin Logins</p>
+<p>2. Google and Facebook Logins Provided</p>
+<p>3. Admin can add Movies</p>
+<p>4. CRUD Operation on Movies</p>
+<p>5. IMDB Integration done. Admin can add movie id and Movie Details will be fethced from IMDB</p>
+<p>6. Password Reset Option Added</p>
+
+
 <h3>Steps for setting up the project</h3>
 <p>1. Run composer update</p>
 <p>2. npm install && npm run dev </p>
