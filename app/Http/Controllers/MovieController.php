@@ -45,8 +45,7 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        if(auth()->user()->isAdmin != 1){
-            if($request->hasFile('movie_poster'))
+        if($request->hasFile('movie_poster'))
             {
                 // Get filename with the extension
                 // Get filename with the extension
@@ -71,7 +70,6 @@ class MovieController extends Controller
             $movie->movie_poster = $fileNameToStore;
             $movie->save();
             return redirect('/home')->with('success', 'Movie Added');
-        }
     }
 
     /**
@@ -118,7 +116,6 @@ class MovieController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if(auth()->user()->isAdmin == 1){   
             $movie = Movie::find($id);
             if($request->hasFile('movie_poster'))
             {
@@ -149,7 +146,6 @@ class MovieController extends Controller
             $movie->save();
 
             return redirect('/home')->with('success', 'Movie Updated');
-        }
     }
 
     /**

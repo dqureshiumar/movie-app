@@ -40,7 +40,7 @@ class HomeController extends Controller
             $movie->movie_name = $title->title();
             $movie->user_id = auth()->user()->id;
             $movie->movie_description = $title->plotoutline();
-            $movie->movie_poster = $pic;
+            $movie->movie_poster = $title->photo();
             $movie->isIMDB = 'yes';
             $movie->save();
             return redirect('/home')->with('success', 'Movie Added');
@@ -49,6 +49,5 @@ class HomeController extends Controller
         catch (\Exception $e){
             return redirect('/home')->with('error', 'Invalid Movie ID');
         }
-        
     }
 }

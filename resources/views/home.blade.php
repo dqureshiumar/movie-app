@@ -72,7 +72,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{auth()->user()->name}}'s {{ __('Dashboard') }}
-                    <a style="float:right" href="{{route('movie.create')}}" class="btn btn-primary btn-sm">Search Movie</a>
+                    {{--<a style="float:right" href="{{route('movie.create')}}" class="btn btn-primary btn-sm">Search Movie</a>--}}
                 </div>
 
                 <div class="card-body">
