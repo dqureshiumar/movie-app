@@ -70,7 +70,7 @@
                                     {{ __('Sign Up with Google') }}
                                 </a>
                                 <br>OR<br>
-                                <a href="{{url('/redirect')}}" class="btn btn-primary">
+                                <a href="{{url('/facebook')}}" class="btn btn-primary">
                                     {{ __('Sign In with Facebook') }}
                                 </a>
                             </div>
